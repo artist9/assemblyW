@@ -24,8 +24,8 @@ module.exports = {
 				loader: PugPlugin.loader,
 			},
 			{
-				test: /\.(css|sass|scss)$/,
-				use: ['css-loader', 'sass-loader'],
+				test: /\.(scss|css)$/,
+				use: ['css-loader', 'postcss-loader', 'sass-loader'],
 			},
 		],
 	},
