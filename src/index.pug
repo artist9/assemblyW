@@ -11,4 +11,6 @@ html(lang= 'ru')
         .logo-svg
             img.logo2(src=require('./images/dragon.svg'), alt='Загрузка SVG изображений с помощью Webpack')
 
+        include:markdown-it ../content/article.md
+
         script(src=require('./index.js'))
